@@ -1,0 +1,15 @@
+class Pessoa: 
+    def __init__(self, nome, idade, CEP, rua, tp_sang ):
+        self.nome = nome
+        self.idade = idade
+        self.CEP = CEP
+        self.rua = rua
+        self.tp_sang = tp_sang
+    
+    def novo_cep (self, nov_cep):
+        self.CEP = nov_cep
+
+pessoa1 = Pessoa('Edrey', 20, 55299839, 'Herculano Rodrigues Netto', '+A')
+print(pessoa1.CEP)
+pessoa1.novo_cep(123332443)
+print(pessoa1.CEP)
